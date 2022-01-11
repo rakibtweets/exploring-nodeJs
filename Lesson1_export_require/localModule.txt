@@ -1,0 +1,22 @@
+Noje js local module export requre steps
+
+1. create and js file and create function on it
+2. three way to exports local function
+
+    - syntax1: exports.anyName = functionName
+    - syntax2: 
+    module.exports = {
+        functionName
+    }
+    -syntax3: exports.functionName(){
+        // function code
+    }
+
+3. we can require exported local module in defferent way
+
+    - const name = require('file-path')
+    // we can use Name.exports functionName
+
+    - const {exported functionName} = require('/file-path')
+
+    
