@@ -1,0 +1,19 @@
+Node js file system(fs) module
+
+writeFile: writeFile override the file
+
+syntax: fs.writeFile('fileName.txt','fileData',callBackFunction)
+
+appendFile: appendFile doesn't  override the file.Append file does not over write. It just added all the new things.
+
+syntax: fs.appendFile('fileName.txt','fileData',callBackFunction)
+
+readFile: use to read data from a file
+syntax: fs.readFile('fileName','utf-8',callBackFunction)
+
+rename: use to rename the file
+syntax: fs.rename('fileName','changeName',callBackFunction)
+
+
+
+
