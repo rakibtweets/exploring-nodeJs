@@ -1,0 +1,5 @@
+Noje js os and path modules
+
+OS modules
+
+os.homedir: used to
