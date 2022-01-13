@@ -5,7 +5,26 @@ const userRouter = require('./Routes/users.route');
 app.use('/api/user', userRouter);
 
 app.get('/', (req, res) => {
-  res.send('Home page route');
+  res.statusCode = 200;
+  res.sendFile(__dirname + '/Views/index.html');
+});
+
+app.use('/register', (req, res) => {
+  // res.status(200).json({
+  //   name: 'Rakib Hasan',
+  //   message: 'I am register Page',
+  //   statusCode: 200,
+  // });
+
+  res.status(200);
+  res.sendFile(__dirname + '/views/register.html');
+});
+app.use('/login', (req, res) => {
+  // res.cookie('Name', 'Rakib');
+  // res.cookie('age', '25');
+  res.clearCookie('Name');
+  res.append('id', '130');
+  res.end();
 });
 
 app.use((req, res) => {
