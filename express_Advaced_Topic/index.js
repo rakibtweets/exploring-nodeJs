@@ -4,7 +4,7 @@ const app = express();
 const port = 5000;
 
 //middle-ware
-app.use(express.json());
+app.use(express.json()); // parses the body of the request
 app.use(express.urlencoded({ extended: true }));
 
 //create middleware function and use it
